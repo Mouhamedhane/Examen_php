@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Styles pour la barre de navigation */
+.logo {
+  background-color: #0b6310;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.logo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.logo ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.logo ul li a:hover {
+  color: #ffcd00;
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  max-width: 400px; /* Largeur maximale pour le wrapper */
+  margin: 50px auto; /* Centre le wrapper horizontalement */
+}
+
+.grey {
+  color: #999999;
+}
+
+.profile-top {
+  height: 150px;
+  width: 100%;
+  background-image: url("./city.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.profile-image {
+  background-image: url("./user.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-bottom {
+  padding: 15px;
+  text-align: center;
+}
+
+.main-infos {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.email {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.ville {
+  font-size: 16px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ville ion-icon {
+  margin-right: 3px;
+  color: #388eff;
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stat-item:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.stat {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+	.signUpCard {
+		width: 90%;
+		padding: 40px 20px; 
+	}
+}

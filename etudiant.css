@@ -1,0 +1,308 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Styles pour la barre de navigation */
+.logo {
+    background-color: #0b6310;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.logo ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.logo ul li a:hover {
+    color: #ffcd00;
+}
+
+/* Styles pour le conteneur principal */
+.group {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour le titre */
+.group h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #215f0f;
+    margin-bottom: 20px;
+    animation: rotateColor 10s linear infinite;
+}
+
+/* Styles pour les liens de navigation */
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #215f0f;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Styles pour l'image admin */
+.img_admin {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img_admin img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #0b6310;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour le bouton de déconnexion */
+.disconnect {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.disconnect:hover {
+    background-color: #cc0000;
+}
+
+/* Styles pour les boutons d'action */
+.modifier, .supprimer, .ajouter {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.modifier:hover, .supprimer:hover, .ajouter:hover {
+    background-color: #0056b3;
+}
+/* Styles pour le tableau */
+.group table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.group th, .group td {
+    padding: 12px;
+    text-align: left;
+}
+
+.group th {
+    background-color: #0b6310;
+    color: white;
+}
+
+.group tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.group tr:hover {
+    background-color: #d3d3d3;
+    transition: background-color 0.3s ease;
+}
+
+.group td a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.group td a:hover {
+    color: #0056b3;
+}
+
+/* Styles pour les boutons d'action */
+.modifier, .supprimer, .ajouter {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.modifier:hover, .supprimer:hover, .ajouter:hover {
+    background-color: #0056b3;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.search-form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.memoires {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.memoire {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition-property: transform;
+    transition-duration: .2s;
+    
+}
+.memoire a {
+    color: #007bff; /* Couleur par défaut */
+    transition: color 0.3s ease; /* Transition de couleur */
+}
+
+.memoire h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.memoire p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.no-results {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+.anime span {
+    display: inline-block;
+    animation-name: colorChange, slideIn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    color: transparent;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #FF5733; /* Rouge */
+    }
+    25% {
+        color: #FFC300; /* Jaune */
+    }
+    50% {
+        color: #DAF7A6; /* Vert */
+    }
+    75% {
+        color: #C70039; /* Rouge foncé */
+    }
+    100% {
+        color: #900C3F; /* Pourpre */
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+	.signUpCard {
+		width: 90%;
+		padding: 40px 20px; 
+	}
+}
